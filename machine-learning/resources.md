@@ -2,27 +2,20 @@
 
 ## General
 
-- Linear algebra:
-  - [MIT OCW Course — Excellent lecture notes!](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/)
+- Linear algebra: [MIT OCW Course — Excellent lecture notes!](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/)
 
 ## Lecture 2
 
 ### Gradient descent
-- Why simultaneous update?
-  - ["Why should we update simultaneously all the variables in gradient descent?" (Stack Exchange)](https://math.stackexchange.com/questions/2419301/why-should-we-update-simultaneously-all-the-variables-in-gradient-descent/2419310)
-
-- Mini-batch stochastic gradient descent
-  - "*A compromise between computing the true gradient and the gradient at a single example is to compute the gradient against more than one training example (called a "mini-batch") at each step.*" [Wikipedia](https://en.wikipedia.org/wiki/Stochastic_gradient_descent)
+- Why simultaneous update? ["Why should we update simultaneously all the variables in gradient descent?" (Stack Exchange)](https://math.stackexchange.com/questions/2419301/why-should-we-update-simultaneously-all-the-variables-in-gradient-descent/2419310)
+- Mini-batch stochastic gradient descent: "*A compromise between computing the true gradient and the gradient at a single example is to compute the gradient against more than one training example (called a "mini-batch") at each step.*" [Wikipedia](https://en.wikipedia.org/wiki/Stochastic_gradient_descent)
 
 ### Linear regression
 
-- Linear regression to fit nonlinear functions:
-  - ["Can a linear regression be quadratic?" (Stack Exchange)](https://math.stackexchange.com/questions/2022783/can-a-linear-regression-be-quadratic)
-
+- Linear regression to fit nonlinear functions: ["Can a linear regression be quadratic?" (Stack Exchange)](https://math.stackexchange.com/questions/2022783/can-a-linear-regression-be-quadratic)
 - Least squares review from linear algebra:
   - [Lecture notes (MIT OCW)](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-squares-determinants-and-eigenvalues/projection-matrices-and-least-squares/MIT18_06SCF11_Ses2.3sum.pdf)
   - [Videos and materials (MIT OCW)]( https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-squares-determinants-and-eigenvalues/projection-matrices-and-least-squares/)
-
 - [Why use gradient descent for linear regression, when a closed-form math solution is available? (Stack Exchange)](https://stats.stackexchange.com/questions/278755/why-use-gradient-descent-for-linear-regression-when-a-closed-form-math-solution)
 
 - Convex optimization (proof of convergence of linear regression):
@@ -34,11 +27,8 @@
 ## Lecture 3
 
 ### Log Probability
-- Why log probability?
-  - [Explanation of log probability (Wikipedia)](https://en.wikipedia.org/wiki/Log_probability)
-
-- Review of log properties:
-  - [Derivations of log properties (Khan Academy)]( https://www.khanacademy.org/math/algebra2/exponential-and-logarithmic-functions/properties-of-logarithms/a/justifying-the-logarithm-properties)
+- Why log probability? [Explanation of log probability (Wikipedia)](https://en.wikipedia.org/wiki/Log_probability)
+- Review of log properties: [Derivations of log properties (Khan Academy)]( https://www.khanacademy.org/math/algebra2/exponential-and-logarithmic-functions/properties-of-logarithms/a/justifying-the-logarithm-properties)
 
 ## Lecture 4
 
@@ -49,3 +39,24 @@ https://stats.stackexchange.com/questions/253632/why-is-newtons-method-not-widel
 ### Softmax regression
 - Derivation of gradient, relation to logistic regression: http://ufldl.stanford.edu/wiki/index.php/Softmax_Regression
 http://ufldl.stanford.edu/tutorial/supervised/SoftmaxRegression/
+
+## Lecture 5
+
+- https://ai.stackexchange.com/questions/2106/how-can-one-intuitively-understand-generative-v-s-discriminative-models-specifi
+- Covariance: *"If the greater values of one variable mainly correspond with the greater values of the other variable, and the same holds for the lesser values, (i.e., the variables tend to show similar behavior), the covariance is positive. In the opposite case, when the greater values of one variable mainly correspond to the lesser values of the other, (i.e., the variables tend to show opposite behavior), the covariance is negative. The sign of the covariance therefore shows the tendency in the linear relationship between the variables. The magnitude of the covariance is not easy to interpret because it is not normalized and hence depends on the magnitudes of the variables. The normalized version of the covariance, the correlation coefficient, however, shows by its magnitude the strength of the linear relation."*  [Wikipedia](https://en.wikipedia.org/wiki/Covariance)
+- [Linear methods for classification (UMD)](http://users.umiacs.umd.edu/~hcorrada/PracticalML/pdf/lectures/classification.pdf)
+  - Useful notes on Linear (Gaussian) Discriminant Analysis
+
+## Lecture 6
+
+- [Multinomial distribution  (Wikipedia)](https://en.wikipedia.org/wiki/Multinomial_distribution)
+- [Decision boundary of logistic regression (Coursera)](https://www.coursera.org/lecture/machine-learning/decision-boundary-WuL1H)
+  - Useful for intuition of linear boundary of logistic regression
+- [Review: Normal vector from plane equation (Khan Academy)](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/dot-cross-products/v/normal-vector-from-plane-equation)
+  - Why the weight vector is orthogonal to the separating hyperplane $(w^t * x + b = 0)$
+
+# Lecture 7
+
+- [SVM Notes (NYU) ](https://davidrosenberg.github.io/mlcourse/Labs/3-SVM-Notes_sol.pdf)
+  - "Hard Margin SVM" Section gives good summary of derivation and better intuition of why we have to impose constraint on max geometric margin problem (since w and b can be scaled even dividing by magnitude)
+  - I'm still not entirely sure why Ng's constraints arise (his strawmen seem a bit harder to motivate)
