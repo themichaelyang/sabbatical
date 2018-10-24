@@ -16,6 +16,10 @@
 - Least squares review from linear algebra:
   - [Lecture notes (MIT OCW)](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-squares-determinants-and-eigenvalues/projection-matrices-and-least-squares/MIT18_06SCF11_Ses2.3sum.pdf)
   - [Videos and materials (MIT OCW)]( https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-squares-determinants-and-eigenvalues/projection-matrices-and-least-squares/)
+- See also: ESL2, Section 3.2 (pg 45)
+  - [Why is y−ŷ perpendicular to the subspace spanned by x in linear regression? (Stack Exchange)]( https://stats.stackexchange.com/questions/241025/why-is-mathbfy-mathbf-haty-perpendicular-to-the-subspace-spanned-by)
+  - [Why is $X^TX$ invertable? (Reddit)]( https://www.reddit.com/r/MachineLearning/comments/3ilhnv/why_is_xt_x_invertible/)
+  - [Proof that any positive definite is invertible (Stack Exchange)](https://math.stackexchange.com/questions/1059566/explain-proof-that-any-positive-definite-matrix-is-invertible)
 - [Why use gradient descent for linear regression, when a closed-form math solution is available? (Stack Exchange)](https://stats.stackexchange.com/questions/278755/why-use-gradient-descent-for-linear-regression-when-a-closed-form-math-solution)
 
 - Convex optimization (proof of convergence of linear regression):
@@ -58,5 +62,8 @@ http://ufldl.stanford.edu/tutorial/supervised/SoftmaxRegression/
 # Lecture 7
 
 - [SVM Notes (NYU) ](https://davidrosenberg.github.io/mlcourse/Labs/3-SVM-Notes_sol.pdf)
-  - "Hard Margin SVM" Section gives good summary of derivation and better intuition of why we have to impose constraint on max geometric margin problem (since w and b can be scaled even dividing by magnitude)
-  - I'm still not entirely sure why Ng's constraints arise (his strawmen seem a bit harder to motivate)
+  - "Hard Margin SVM" Section gives a simpler derivation and better intuition of why we have to impose constraint on max geometric margin problem (since $w$ and $b$ can be scaled even dividing by magnitude)
+  - Why does Ng use the functional margin over the geometric margin when formulating the optimization problem? Is this because the final result optimizes this property? I'm assuming this has to do with the functional margin being a convex problem.
+  - Additionally, why do we care about constraining $w$ and $b$ if we will get the hyperplane regardless? Or will not constraining not give us a convex problem?
+- [Why do we choose to minimize ${1\over{2}}||w||^2$ instead of maximizing $1\over{||w||}$? (Stack Exchange) ](https://math.stackexchange.com/questions/1815810/why-do-we-minimize-the-squared-norm-instead-of-the-norm-in-this-optimization-pro)
+- [How is maximizing $1\over{||w||}$ equivalent to minimizing ${1\over{2}}||w||^2$? (Stack Exchange) ](https://math.stackexchange.com/questions/773847/why-is-max-frac2w-min-frac12w2)
