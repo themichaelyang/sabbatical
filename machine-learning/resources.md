@@ -3,6 +3,7 @@
 ## General
 
 - Linear algebra: [MIT OCW Course — Excellent lecture notes!](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/)
+  - [Linear algebra review for Machine Learning (CMU)](http://www.cs.cmu.edu/~jingx/docs/linearalgebra.pdf)
 
 ## Lecture 2
 
@@ -56,8 +57,9 @@ http://ufldl.stanford.edu/tutorial/supervised/SoftmaxRegression/
 - [Multinomial distribution  (Wikipedia)](https://en.wikipedia.org/wiki/Multinomial_distribution)
 - [Decision boundary of logistic regression (Coursera)](https://www.coursera.org/lecture/machine-learning/decision-boundary-WuL1H)
   - Useful for intuition of linear boundary of logistic regression
-- [Review: Normal vector from plane equation (Khan Academy)](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/dot-cross-products/v/normal-vector-from-plane-equation)
-  - Why the weight vector is orthogonal to the separating hyperplane $(w^t * x + b = 0)$
+- Why is the weight vector is orthogonal to the separating hyperplane $(w^t * x + b = 0)$?
+  - [Normals to Planes and Lines (UW)]( http://sites.math.washington.edu/~king/coursedir/m445w04/notes/vector/normals-planes.html)
+  - [Review: Normal vector from plane equation (Khan Academy)](https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/dot-cross-products/v/normal-vector-from-plane-equation)
 
 # Lecture 7
 
@@ -65,5 +67,11 @@ http://ufldl.stanford.edu/tutorial/supervised/SoftmaxRegression/
   - "Hard Margin SVM" Section gives a simpler derivation and better intuition of why we have to impose constraint on max geometric margin problem (since $w$ and $b$ can be scaled even dividing by magnitude)
   - Why does Ng use the functional margin over the geometric margin when formulating the optimization problem? Is this because the final result optimizes this property? I'm assuming this has to do with the functional margin being a convex problem.
   - Additionally, why do we care about constraining $w$ and $b$ if we will get the hyperplane regardless? Or will not constraining not give us a convex problem?
+- [SVM Slides (NYU / MIT)](http://people.csail.mit.edu/dsontag/courses/ml13/slides/lecture3.pdf)
+  - Notice how boundary doesn't change regardless of scaling factor!
+- [SVM Slides (CMU)](https://www.cs.cmu.edu/~tom/10701_sp11/slides/Kernels_SVM2_04_12_2011-ann.pdf)
 - [Why do we choose to minimize ${1\over{2}}||w||^2$ instead of maximizing $1\over{||w||}$? (Stack Exchange) ](https://math.stackexchange.com/questions/1815810/why-do-we-minimize-the-squared-norm-instead-of-the-norm-in-this-optimization-pro)
 - [How is maximizing $1\over{||w||}$ equivalent to minimizing ${1\over{2}}||w||^2$? (Stack Exchange) ](https://math.stackexchange.com/questions/773847/why-is-max-frac2w-min-frac12w2)
+- [Positive Definite Matrices](https://www.math.utah.edu/~zwick/Classes/Fall2012_2270/Lectures/Lecture33_with_Examples.pdf)
+- [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
+- [Deriving the optimal value for the intercept term in SVM (Stack Exchange)](https://stats.stackexchange.com/questions/91269/deriving-the-optimal-value-for-the-intercept-term-in-svm)
