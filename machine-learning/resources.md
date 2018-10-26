@@ -75,3 +75,9 @@ http://ufldl.stanford.edu/tutorial/supervised/SoftmaxRegression/
 - [Positive Definite Matrices](https://www.math.utah.edu/~zwick/Classes/Fall2012_2270/Lectures/Lecture33_with_Examples.pdf)
 - [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
 - [Deriving the optimal value for the intercept term in SVM (Stack Exchange)](https://stats.stackexchange.com/questions/91269/deriving-the-optimal-value-for-the-intercept-term-in-svm)
+
+## Lecture 8
+
+- Why does polynomial kernel ($K(x,z) = (x^Tz + c)^d$) map to a ${n+d \choose d}$ space?
+  - I believe we can think of this as choosing $d$ number of $x$ terms from the set of $x_1, x_2... x_n$, repeated $d$ times, since $(x_1)^d$ is possible. We use combination because we want the unique terms to find the feature space; the length of the vector given by $\phi(x)$ includes duplicate terms (e.g. $x_1x_2$ and $x_2x_1$ in the basic kernel).
+  - Less intuitive answer: [Polynomial kernel feature space (Stack Exchange)](https://stats.stackexchange.com/questions/285292/polynomial-kernel-feature-space)
