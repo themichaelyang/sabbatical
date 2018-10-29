@@ -1,9 +1,10 @@
-# Resources
+# Lecture Resources
 
 ## General
 
 - Linear algebra: [MIT OCW Course — Excellent lecture notes!](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/)
   - [Linear algebra review for Machine Learning (CMU)](http://www.cs.cmu.edu/~jingx/docs/linearalgebra.pdf)
+- [Machine Learning (Coursera)](https://www.coursera.org/learn/machine-learning): can be useful to step back and see simpler explanations, practical considerations
 
 ## Lecture 2
 
@@ -81,3 +82,8 @@ http://ufldl.stanford.edu/tutorial/supervised/SoftmaxRegression/
 - Why does polynomial kernel ($K(x,z) = (x^Tz + c)^d$) map to a ${n+d \choose d}$ space?
   - I believe we can think of this as choosing $d$ number of $x$ terms from the set of $x_1, x_2... x_n$, repeated $d$ times, since $(x_1)^d$ is possible. We use combination because we want the unique terms to find the feature space; the length of the vector given by $\phi(x)$ includes duplicate terms (e.g. $x_1x_2$ and $x_2x_1$ in the basic kernel).
   - Less intuitive answer: [Polynomial kernel feature space (Stack Exchange)](https://stats.stackexchange.com/questions/285292/polynomial-kernel-feature-space)
+- [Hinge loss (Wikipedia)](https://en.wikipedia.org/wiki/Hinge_loss)
+  - Ng doesn't talk about this and only briefly mentioned in supplemental notes, also generally skips over cost functions
+  - [Constrained versus unconstrained formulation of SVM optimization (Stack Exchange)]( https://stats.stackexchange.com/questions/6637/constrained-versus-unconstrained-formulation-of-svm-optimisation)
+  - [SVM Slides (Oxford, pg 29 for hinge loss)](http://www.robots.ox.ac.uk/~az/lectures/ml/lect2.pdf)
+  - [SVM Intuitive Explanation (Coursera)](https://www.coursera.org/lecture/machine-learning/optimization-objective-sHfVT)
