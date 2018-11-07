@@ -9,6 +9,7 @@
 ## Lecture 2
 
 ### Gradient descent
+- [Do we need gradient descent to find the coefficients of a linear regression model? (Stack Exchange)](https://stats.stackexchange.com/questions/160179/do-we-need-gradient-descent-to-find-the-coefficients-of-a-linear-regression-mode/164164#164164)
 - Why simultaneous update? ["Why should we update simultaneously all the variables in gradient descent?" (Stack Exchange)](https://math.stackexchange.com/questions/2419301/why-should-we-update-simultaneously-all-the-variables-in-gradient-descent/2419310)
 - Mini-batch stochastic gradient descent: "*A compromise between computing the true gradient and the gradient at a single example is to compute the gradient against more than one training example (called a "mini-batch") at each step.*" [Wikipedia](https://en.wikipedia.org/wiki/Stochastic_gradient_descent)
 
@@ -45,6 +46,10 @@ https://stats.stackexchange.com/questions/253632/why-is-newtons-method-not-widel
 ### Softmax regression
 - Derivation of gradient, relation to logistic regression: http://ufldl.stanford.edu/wiki/index.php/Softmax_Regression
 http://ufldl.stanford.edu/tutorial/supervised/SoftmaxRegression/
+
+### GLM
+- More advanced treatment of GLM: [Generalized Linear Models (CMU)](http://www.stat.cmu.edu/~ryantibs/advmethods/notes/glm.pdf)
+- [Canonical link vs link function (Stack Exchange)](https://stats.stackexchange.com/questions/40876/what-is-the-difference-between-a-link-function-and-a-canonical-link-function)
 
 ## Lecture 5
 
@@ -87,3 +92,25 @@ http://ufldl.stanford.edu/tutorial/supervised/SoftmaxRegression/
   - [Constrained versus unconstrained formulation of SVM optimization (Stack Exchange)]( https://stats.stackexchange.com/questions/6637/constrained-versus-unconstrained-formulation-of-svm-optimisation)
   - [SVM Slides (Oxford, pg 29 for hinge loss)](http://www.robots.ox.ac.uk/~az/lectures/ml/lect2.pdf)
   - [SVM Intuitive Explanation (Coursera)](https://www.coursera.org/lecture/machine-learning/optimization-objective-sHfVT)
+- [The Spectrum Kernel: A String Kernel for Protein Classification](http://psb.stanford.edu/psb-online/proceedings/psb02/leslie.pdf)
+
+## Lecture 9
+
+- [Learning Theory slides (CMU)](https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/lecture28-pac.pdf)
+  - [Whiteboard content of slides](https://www.cs.cmu.edu/~mgormley/courses/10601-s17/slides/whiteboard28b.pdf)
+  - Covers PAC learning (not covered by Ng)
+- [PAC Learnable and Emperical Risk Minimization (Princeton)](http://www.cs.princeton.edu/~rlivni/cos511/lectures/lect2.pdf)
+- For more in depth treatment:
+  - [Machine Learning Theory (UCLA)](http://www.jennwv.com/courses/F11.html)
+
+## Lecture 10
+
+- Empirical risk minimization: 0-1 indicator loss function
+  - SVM and logistic regression are convex approximations of ERM (so learning theory holds)
+  - SVM: hinge loss
+  - logistic regression: log loss
+  - Some of the intuition relating the cost of SVM to logistic: [SVM Optimization Objectives (Coursera)]( https://www.coursera.org/lecture/machine-learning/optimization-objective-sHfVT)
+
+## Tree Ensembles
+
+- [Tree-based Methods Videos (Stanford)](https://lagunita.stanford.edu/courses/HumanitiesSciences/StatLearning/Winter2016/courseware/4cd5971758e84840b24d91c763df6ce8/bb3f21ec63554788b9a3023c22a98118/)
