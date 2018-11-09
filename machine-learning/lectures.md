@@ -8,48 +8,46 @@
 
 ## Lecture 2
 
-### Gradient descent
-- [Do we need gradient descent to find the coefficients of a linear regression model? (Stack Exchange)](https://stats.stackexchange.com/questions/160179/do-we-need-gradient-descent-to-find-the-coefficients-of-a-linear-regression-mode/164164#164164)
-- Why simultaneous update? ["Why should we update simultaneously all the variables in gradient descent?" (Stack Exchange)](https://math.stackexchange.com/questions/2419301/why-should-we-update-simultaneously-all-the-variables-in-gradient-descent/2419310)
-- Mini-batch stochastic gradient descent: "*A compromise between computing the true gradient and the gradient at a single example is to compute the gradient against more than one training example (called a "mini-batch") at each step.*" [Wikipedia](https://en.wikipedia.org/wiki/Stochastic_gradient_descent)
-
-### Linear regression
-
-- Linear regression to fit nonlinear functions: ["Can a linear regression be quadratic?" (Stack Exchange)](https://math.stackexchange.com/questions/2022783/can-a-linear-regression-be-quadratic)
-- Least squares review from linear algebra:
-  - [Lecture notes (MIT OCW)](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-squares-determinants-and-eigenvalues/projection-matrices-and-least-squares/MIT18_06SCF11_Ses2.3sum.pdf)
-  - [Videos and materials (MIT OCW)]( https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-squares-determinants-and-eigenvalues/projection-matrices-and-least-squares/)
-- See also: ESL2, Section 3.2 (pg 45)
-  - [Why is y−ŷ perpendicular to the subspace spanned by x in linear regression? (Stack Exchange)]( https://stats.stackexchange.com/questions/241025/why-is-mathbfy-mathbf-haty-perpendicular-to-the-subspace-spanned-by)
-  - [Why is $X^TX$ invertable? (Reddit)]( https://www.reddit.com/r/MachineLearning/comments/3ilhnv/why_is_xt_x_invertible/)
-  - [Proof that any positive definite is invertible (Stack Exchange)](https://math.stackexchange.com/questions/1059566/explain-proof-that-any-positive-definite-matrix-is-invertible)
-- [Why use gradient descent for linear regression, when a closed-form math solution is available? (Stack Exchange)](https://stats.stackexchange.com/questions/278755/why-use-gradient-descent-for-linear-regression-when-a-closed-form-math-solution)
-
+- Gradient descent
+  - [Do we need gradient descent to find the coefficients of a linear regression model? (Stack Exchange)](https://stats.stackexchange.com/questions/160179/do-we-need-gradient-descent-to-find-the-coefficients-of-a-linear-regression-mode/164164#164164)
+  - Why simultaneous update? ["Why should we update simultaneously all the variables in gradient descent?" (Stack Exchange)](https://math.stackexchange.com/questions/2419301/why-should-we-update-simultaneously-all-the-variables-in-gradient-descent/2419310)
+  - Mini-batch stochastic gradient descent: "*A compromise between computing the true gradient and the gradient at a single example is to compute the gradient against more than one training example (called a "mini-batch") at each step.*" [Wikipedia](https://en.wikipedia.org/wiki/Stochastic_gradient_descent)
+  - Not mentioned: [Feature scaling (Coursera)](https://www.coursera.org/lecture/machine-learning/gradient-descent-in-practice-i-feature-scaling-xx3Da)
+- Linear regression
+  - Linear regression to fit nonlinear functions: ["Can a linear regression be quadratic?" (Stack Exchange)](https://math.stackexchange.com/questions/2022783/can-a-linear-regression-be-quadratic)
+  - Least squares review from linear algebra:
+    - [Lecture notes (MIT OCW)](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-squares-determinants-and-eigenvalues/projection-matrices-and-least-squares/MIT18_06SCF11_Ses2.3sum.pdf)
+    - [Videos and materials (MIT OCW)]( https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-squares-determinants-and-eigenvalues/projection-matrices-and-least-squares/)
+  - See also: ESL2, Section 3.2 (pg 45)
+    - [Why is y−ŷ perpendicular to the subspace spanned by x in linear regression? (Stack Exchange)]( https://stats.stackexchange.com/questions/241025/why-is-mathbfy-mathbf-haty-perpendicular-to-the-subspace-spanned-by)
+    - [Why is $X^TX$ invertable? (Reddit)]( https://www.reddit.com/r/MachineLearning/comments/3ilhnv/why_is_xt_x_invertible/)
+    - [Proof that any positive definite is invertible (Stack Exchange)](https://math.stackexchange.com/questions/1059566/explain-proof-that-any-positive-definite-matrix-is-invertible)
+  - [Why use gradient descent for linear regression, when a closed-form math solution is available? (Stack Exchange)](https://stats.stackexchange.com/questions/278755/why-use-gradient-descent-for-linear-regression-when-a-closed-form-math-solution)
 - Convex optimization (proof of convergence of linear regression):
-  - Ng brushes over this but seems pretty important. Looking at syllabus, might be covered later?
+  - Ng brushes over this but seems pretty important. Some additional notes in the course website.
   - [Slides on convex optimization (Berkeley)](https://people.eecs.berkeley.edu/~jordan/courses/294-fall09/lectures/optimization/slides.pdf)
   - [Additional slides (NYU; not as clear)](https://cs.nyu.edu/~mohri/mls/ml_convex_optimization.pdf)
   - [Handout (CMU; have not fulled reviewed yet)](http://www.math.cmu.edu/~lohp/docs/math/mop2013/convexity-soln.pdf)
 
 ## Lecture 3
 
-### Log Probability
-- Why log probability? [Explanation of log probability (Wikipedia)](https://en.wikipedia.org/wiki/Log_probability)
-- Review of log properties: [Derivations of log properties (Khan Academy)]( https://www.khanacademy.org/math/algebra2/exponential-and-logarithmic-functions/properties-of-logarithms/a/justifying-the-logarithm-properties)
+- Log Probability
+  - Why log probability? [Explanation of log probability (Wikipedia)](https://en.wikipedia.org/wiki/Log_probability)
+  - Review of log properties: [Derivations of log properties (Khan Academy)]( https://www.khanacademy.org/math/algebra2/exponential-and-logarithmic-functions/properties-of-logarithms/a/justifying-the-logarithm-properties)
 
 ## Lecture 4
 
-### Newton's Method
-- ["Why is Newton's method not widely used in machine learning?" (Stack Exchange)](
+- Newton's Method
+  - ["Why is Newton's method not widely used in machine learning?" (Stack Exchange)](
 https://stats.stackexchange.com/questions/253632/why-is-newtons-method-not-widely-used-in-machine-learning)
-
-### Softmax regression
-- Derivation of gradient, relation to logistic regression: http://ufldl.stanford.edu/wiki/index.php/Softmax_Regression
+- Softmax regression
+  - Derivation of gradient, relation to logistic regression: http://ufldl.stanford.edu/wiki/index.php/Softmax_Regression
 http://ufldl.stanford.edu/tutorial/supervised/SoftmaxRegression/
-
-### GLM
-- More advanced treatment of GLM: [Generalized Linear Models (CMU)](http://www.stat.cmu.edu/~ryantibs/advmethods/notes/glm.pdf)
-- [Canonical link vs link function (Stack Exchange)](https://stats.stackexchange.com/questions/40876/what-is-the-difference-between-a-link-function-and-a-canonical-link-function)
+- Generalized Linear Models (GLM)
+  - More advanced treatment of GLM: [Generalized Linear Models (CMU)](http://www.stat.cmu.edu/~ryantibs/advmethods/notes/glm.pdf)
+  - [Canonical link vs link function (Stack Exchange)](https://stats.stackexchange.com/questions/40876/what-is-the-difference-between-a-link-function-and-a-canonical-link-function)
+  - We predict with the derived hypothesis model, $E[T(y);\eta]$. We assume that eta is linearly related: $\eta = \theta^Tx^{(i)}$. This assumption is known as the canonical link function (there are other ways to linearly relate the probability distribution).
+  - This terminology comes from the exponential family's ["canonical form"](https://en.wikipedia.org/wiki/Exponential_family#Scalar_parameter).
 
 ## Lecture 5
 
@@ -110,7 +108,14 @@ http://ufldl.stanford.edu/tutorial/supervised/SoftmaxRegression/
   - SVM: hinge loss
   - logistic regression: log loss
   - Some of the intuition relating the cost of SVM to logistic: [SVM Optimization Objectives (Coursera)]( https://www.coursera.org/lecture/machine-learning/optimization-objective-sHfVT)
+- Not mentioned: Regularization
+  - ISLR: Chapter 6, Linear Model Selection and Regularization
+
+## Lecture 11
+
 
 ## Tree Ensembles
 
 - [Tree-based Methods Videos (Stanford)](https://lagunita.stanford.edu/courses/HumanitiesSciences/StatLearning/Winter2016/courseware/4cd5971758e84840b24d91c763df6ce8/bb3f21ec63554788b9a3023c22a98118/)
+
+## Neural Networks
