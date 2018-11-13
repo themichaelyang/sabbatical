@@ -13,6 +13,7 @@
   - Why simultaneous update? ["Why should we update simultaneously all the variables in gradient descent?" (Stack Exchange)](https://math.stackexchange.com/questions/2419301/why-should-we-update-simultaneously-all-the-variables-in-gradient-descent/2419310)
   - Mini-batch stochastic gradient descent: "*A compromise between computing the true gradient and the gradient at a single example is to compute the gradient against more than one training example (called a "mini-batch") at each step.*" [Wikipedia](https://en.wikipedia.org/wiki/Stochastic_gradient_descent)
   - Not mentioned: [Feature scaling (Coursera)](https://www.coursera.org/lecture/machine-learning/gradient-descent-in-practice-i-feature-scaling-xx3Da)
+  - [Other optimization methods (Coursera)](https://www.coursera.org/learn/machine-learning/lecture/licwf/advanced-optimization)
 - Linear regression
   - Linear regression to fit nonlinear functions: ["Can a linear regression be quadratic?" (Stack Exchange)](https://math.stackexchange.com/questions/2022783/can-a-linear-regression-be-quadratic)
   - Least squares review from linear algebra:
@@ -108,14 +109,26 @@ http://ufldl.stanford.edu/tutorial/supervised/SoftmaxRegression/
   - SVM: hinge loss
   - logistic regression: log loss
   - Some of the intuition relating the cost of SVM to logistic: [SVM Optimization Objectives (Coursera)]( https://www.coursera.org/lecture/machine-learning/optimization-objective-sHfVT)
-- Not mentioned: Regularization
+- Not mentioned: Regularization (briefly discussed in lecture 11)
   - ISLR: Chapter 6, Linear Model Selection and Regularization
 
 ## Lecture 11
 
+- [Prior probability (Wikipedia)](https://en.wikipedia.org/wiki/Prior_probability)
+  - "In Bayesian statistical inference, a prior probability distribution, often simply called the prior, of an uncertain quantity is the probability distribution that would express one's beliefs about this quantity before some evidence is taken into account"
+- [Posterior probability (Wikipedia)](https://en.wikipedia.org/wiki/Posterior_probability)
+  - "In Bayesian statistics, the posterior probability of a random event or an uncertain proposition is the conditional probability that is assigned after the relevant evidence or background is taken into account."
+- [Bayesian interpretation of Ridge and Lasso Regression (Princeton)](http://www.cs.princeton.edu/courses/archive/spr09/cos513/scribe/lecture10.pdf)
+  - Interesting fact: [Uniform prior MAP degrades to MLE (Stack Exchange)](https://stats.stackexchange.com/questions/266415/if-we-have-a-uniform-prior-probability-distribution-across-all-ranges-of-thet)
 
 ## Tree Ensembles
 
 - [Tree-based Methods Videos (Stanford)](https://lagunita.stanford.edu/courses/HumanitiesSciences/StatLearning/Winter2016/courseware/4cd5971758e84840b24d91c763df6ce8/bb3f21ec63554788b9a3023c22a98118/)
+  - Pretty easy treatment of topic
+  - Watch 5.4: Bootstrap before 8.4: Bagging
+- Why Gini index and cross-entropy over classification error rate? Read Murphy: 16.2.2.2
+  - In short: Gini and cross-entropy are more discriminant for tree purity (prioritize splits that contain fewer spread of classes), whereas 1-0 error fails to distinguish these cases
+- [Errors and Residuals (Wikipedia)](https://en.wikipedia.org/wiki/Errors_and_residuals)
+- Adaboost:
 
 ## Neural Networks
